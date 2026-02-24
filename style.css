@@ -1,0 +1,24 @@
+/* Basic styling, glass UI, moon animation, meteor effect */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+body{height:100vh;overflow:hidden;color:white;background:#050510;transition:background 0.5s;}
+#canvasBG{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-3;}
+.moon{position:absolute;top:80px;right:120px;width:130px;height:130px;border-radius:50%;background:radial-gradient(circle,#fff,#ccc);box-shadow:0 0 80px #fff;animation:float 8s ease-in-out infinite alternate;}
+@keyframes float{from{transform:translateY(0);}to{transform:translateY(30px);}}
+.card{position:relative;background:rgba(255,255,255,0.08);backdrop-filter:blur(25px);padding:40px;border-radius:25px;margin:20px auto;max-width:500px;box-shadow:0 0 60px rgba(0,255,200,0.3);text-align:center;}
+#loading{position:fixed;width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#000;z-index:9999;}
+.progress-bar{width:350px;height:15px;background:#111;border-radius:10px;overflow:hidden;margin-top:20px;box-shadow:0 0 25px #00ffcc;}
+.progress{height:100%;width:0%;background:linear-gradient(90deg,#00f5ff,#00ff88);animation:loadAnim 6s linear forwards;}
+@keyframes loadAnim{to{width:100%;}}
+button{margin-top:10px;padding:12px;width:100%;border:none;border-radius:10px;background:linear-gradient(45deg,#00f5ff,#00ff88);font-weight:bold;cursor:pointer;transition:0.3s;}
+button:hover{transform:scale(1.05);box-shadow:0 0 20px #00ffcc;}
+.groupBtn{background:linear-gradient(45deg,#25D366,#128C7E);color:white;}
+.discordBtn{background:linear-gradient(45deg,#7289DA,#99AAB5);color:white;}
+.groupBtn:hover{box-shadow:0 0 20px #25D366;}
+.discordBtn:hover{box-shadow:0 0 20px #7289DA;}
+.status{margin:15px 0;font-weight:bold;font-size:16px;}
+#gameSection{margin-top:20px;text-align:center;}
+#starGame{position:relative;height:150px;background:rgba(255,255,255,0.05);border-radius:10px;overflow:hidden;}
+#star{width:20px;height:20px;background:yellow;border-radius:50%;position:absolute;cursor:pointer;}
+ol li{margin:8px 0;font-weight:bold;color:white;text-shadow:0 0 5px #00ffcc;}
+.credit{margin-top:15px;font-size:12px;opacity:0.7;letter-spacing:1px;}
+.credit b{color:#00ffcc;}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ngabuburit CRAFT 🌙</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="canvasBG"></canvas>
+<div class="moon"></div>
+
+<div id="loading">
+<h1>🌌 NGABUBURIT CRAFT</h1>
+<p>Loading...</p>
+<div class="progress-bar"><div class="progress"></div></div>
+</div>
+
+<div class="card">
+<h1>🌙 NGABUBURIT CRAFT</h1>
+<div class="status" id="serverStatus">🔄 Mengecek server...</div>
+
+<input id="ip" value="basic-1.alstore.space:25660" readonly>
+<button onclick="copyIP()">🚀 Copy IP Server</button>
+
+<a href="https://chat.whatsapp.com/Keo8k3IHIUbDRec695AtqN?mode=hq1tcla" target="_blank">
+<button class="groupBtn">💬 Bergabung ke Grup WhatsApp</button>
+</a>
+
+<a href="https://discord.gg/qP5tqfQuU" target="_blank">
+<button class="discordBtn">💬 Bergabung ke Discord</button>
+</a>
+
+<div class="credit">Website by <b>Febri.i</b></div>
+</div>
+
+<h3>🎮 Mini Games</h3>
+<div id="gameSection">
+<div id="guessGame">
+<p><b>Tebak Angka 1-10</b></p>
+<input type="number" id="guessInput" min="1" max="10" placeholder="Masukkan angka">
+<button onclick="checkGuess()">Tebak</button>
+<p id="guessResult"></p>
+</div>
+
+<hr style="margin:15px 0;">
+
+<div id="starGame">
+<p><b>Click Star untuk Poin!</b> Skor: <span id="starScore">0</span></p>
+<div id="star"></div>
+</div>
+</div>
+
+<div class="card">
+<h2>🏆 Rank List</h2>
+<ol>
+<li>Iron</li><li>Gold</li><li>Diamond</li><li>OverWorld</li><li>Nether</li>
+<li>The End</li><li>Space</li><li>Fire</li><li>Water</li><li>Air</li>
+<li>Legends</li><li>Pixel</li><li>Hacker</li><li>VIP</li>
+</ol>
+</div>
+
+<audio id="music" autoplay loop>
+<source src="music/ramadan.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
